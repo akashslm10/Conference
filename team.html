@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gradient-to-b from-blue-950 to-blue-300 h-screen">
     <header class="bg-white">
-        <nav class="flex justify-between items-center w-[99%] mx-auto">
+        <nav class="flex justify-between items-center w-[99%] mx-auto ">
             <div>
                 <img class="w-16 cursor-pointer p-1" src="./no-sugar.png" alt="...">
             </div>
@@ -18,31 +18,73 @@
                         <a class="hover:text-gray-500" href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="./about.html">About</a>
+                        <button id="dropdownNavbarLinkAbout" data-dropdown-toggle="dropdownNavbarAbout" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">About<svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu for "About" -->
+                        <div id="dropdownNavbarAbout" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                            <ul class="py-1" aria-labelledby="dropdownNavbarLinkAbout">
+                                <li>
+                                    <a href="./about.html" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">About Conference</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Dates of Importance</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Scientific Committee</a>
+                                </li>
+                                <li>
+                                    <a href="./speakers.html" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Conference Speakers</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Call for Papers</a>
+                        <button id="dropdownNavbarLinkPaper" data-dropdown-toggle="dropdownNavbarPaper" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover-bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover-text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">Call for Paper<svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu for "Call for Paper" -->
+                        <div id="dropdownNavbarPaper" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                            <ul class="py-1" aria-labelledby="dropdownNavbarLinkPaper">
+                                <li>
+                                    <a href="./paperFormat.html" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Papers Format</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Paper Submission</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Mode of Presentation</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#"> Registration</a>
+                        <button id="dropdownNavbarLinkRegistration" data-dropdown-toggle="dropdownNavbarRegistration" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover-bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover-text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">Registration<svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu for "Registration" -->
+                        <div id="dropdownNavbarRegistration" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                            <ul class="py-1" aria-labelledby="dropdownNavbarLinkRegistration">
+                                <li>
+                                    <a href="https://www.ccgconf.org/registration/" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Offline Registration</a>
+                                </li>
+                                <li>
+                                    <a href="https://climatechangeconferences.com/online-registration/" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Technical Programme</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="./speakers.html">Speakers</a>
+                        <a class="hover:text-gray-500" href="./schedule.html">Technical Programmes</a>
                     </li>
                     <li>
                         <a class="hover:text-gray-500" href="#">Travel</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Accomodation</a>
+                        <a class="hover:text-gray-500" href="#">Accommodation</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Sponsorship</a>
+                        <a class="hover:text-gray-500" href="./sponser.html">Sponsorship</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Contacts</a>
+                        <a class="hover:text-gray-500 pl-8" href="./contact.html">Contacts</a>
                     </li>
                 </ul>
             </div>
