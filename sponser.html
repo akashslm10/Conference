@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-950 to-blue-300 h-screen">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[99%] mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer p-1" src="./no-sugar.png" alt="...">
+            </div>
+            <div class="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Call for Papers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#"> Registration</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Technical Programme</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="./speakers.html">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Travel</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Accomodation</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Sponsorship</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!--  About Page-->
+    <div class="container mx-auto my-20 w-1/3 border border-purple-800 bg-teal-300 ">
+        <div class="p-5 space-y-5 shawdow-x1">
+            <h4 class="text-center text-3x1 bg-slate-950 font-[bold]">Contact Us</h4>
+
+            <form>
+                <div class="grid grid-cols-2 gap-5">
+                    <input 
+                    type = "text" class="border border-teal-400   px-4 py-2 focus:outline-none focus:border-purple-500"
+                    placeholder="First Name"
+                    />
+
+                    <input 
+                    type = "text" class="border border-teal-400   px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
+                    placeholder="Last Name"
+                    />
+
+                    <input 
+                    type = "text" class="border border-teal-400   px-4 py-2 focus:outline-none focus:border-purple-500 "
+                    placeholder="Email"
+                    />
+
+                    <input 
+                    type = "text" class="border border-teal-400   px-4 py-2 focus:outline-none focus:border-purple-500 "
+                    placeholder="Subject"
+                    />
+
+                    <textarea
+                    cols="10"
+                    rows="5"
+                    class="border border-teal-400   px-4 py-2 focus:outline-none focus:border-purple-500 col-span-3"
+                    placeholder="Message...">
+                   </textarea>
+
+                   <input type="submit" value="Submit"
+                   class=" bg-pink-600 text-white rounded-md font-mullish font-bold
+                   hover:bg-green-500 transition-all duration-200 py-[14px] px-[18px]"
+                    />
+                   
+
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <!--  --------  -->
+    
+    <!-- Our story page-->
+    
+    <!-- -----  -->
+    
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+  
+</body>
+</html>
