@@ -9,12 +9,12 @@
 </head>
 <body class="h-screen">
     <header class="bg-white">
-        <nav class="flex justify-between items-center w-[99%] mx-auto ">
+        <nav class="flex justify-between items-center w-[99%] mx-auto  ">
             <div>
             <a href="./index.html"> <img class="w-16 cursor-pointer p-1" src="./image/ccchsh.png" alt="..." ></a>
             </div>
-            <div class="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+            <div class="md:static  absolute  bg-white nav-links z-50  md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col  md:items-center md:gap-[4vw] gap-8" id="topnav">
                     <li>
                         <a class="hover:text-gray-500" href="./index.html">Home</a>
                     </li>
@@ -23,6 +23,9 @@
                         <!-- Dropdown menu for "About" -->
                         <div id="dropdownNavbarAbout" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                             <ul class="py-1" aria-labelledby="dropdownNavbarLinkAbout">
+                                <li>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Theme</a>
+                                </li>
                                 <li>
                                     <a href="./about.html" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">About Conference</a>
                                 </li>
@@ -33,7 +36,7 @@
                                     <a href="./team.html" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Organising Committee</a>
                                 </li>
                                 <li>
-                                    <a href="./speakers.html" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Conference Speakers</a>
+                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Conference Speakers</a>
                                 </li>
                             </ul>
                         </div>
@@ -43,23 +46,17 @@
                         <!-- Dropdown menu for "Call for Paper" -->
                         <div id="dropdownNavbarPaper" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                             <ul class="py-1" aria-labelledby="dropdownNavbarLinkPaper">
-                                <li>
-                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Papers Format</a>
-                                    <!-- dropdowns for paper format -->
-
                                     <ul class="py-1" aria-labelledby="dropdownNavbarLinkAbout">
                                         <li>
-                                            <a href="https://rb.gy/041bd" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Abstract Format</a>
+                                            <a href="https://rb.gy/041bd" target="_blank" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Abstract Format</a>
                                         </li>
                                         <li>
-                                            <a href="https://rb.gy/hrolj" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Full Paper Format</a>
+                                            <a href="https://rb.gy/hrolj" target="_blank" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Full Paper Format</a>
                                         </li>
                                         <li>
                                             <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Poster Format</a>
                                         </li>
                                     </ul>
-
-                                </li>
                                 <li>
                                     <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Paper Submission</a>
                                 </li>
@@ -75,10 +72,10 @@
                         <div id="dropdownNavbarRegistration" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                             <ul class="py-1" aria-labelledby="dropdownNavbarLinkRegistration">
                                 <li>
-                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Offline Registration</a>
+                                    <a href="https://rb.gy/37e9w" target="_blank" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Offline Registration</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
+                                    <a href="https://rb.gy/37e9w" target="_blank" class="text-sm hover-bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +95,7 @@
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                <ion-icon onclick="onToggleMenu(this)"  name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
             <div>
              <a href="https://www.nitp.ac.in/" target="_blank">   <img class="w-16 cursor-pointer p-1" src="./image/NITP_logo3.png" alt="..."></a>
@@ -106,7 +103,7 @@
         </nav>
     </header>
     
-<section class="bg-white w-full h-2/3" style="background-image: url('./image/nitp main .jpeg'); background-size: cover;opacity:0.8;background-repeat: no-repeat;">
+<section class="bg-white w-full h-2/3 " style="background-image: url('./image/nitp main .jpeg'); background-size: cover;opacity:0.8;background-repeat: no-repeat;">
     <div class="flex flex-col items-center space-y-8 lg:space-y-32 px-4 lg:px-0">
         <div class="justify-center mt-20">
             <h1 class="font-mullish font-extrabold text-4xl text-white text-center">INTERNATIONAL CONFERENCE ON CLIMATE CHANGE CULTURAL HERITAGE &<br><br>SUSTAINABLE HABITAT</h1>
@@ -131,7 +128,7 @@
             <div>
                 <h1 class="font-mullish font-bold text-2xl lg:text-4xl text-indigo-200">IMPORTANT DATES SUBMISSION</h1>
             </div>
-
+e
             <div class="container mx-auto mt-4 text-center">
                 <table class="min-w-full bg-transparent font-bold border-2 border-cyan-200 lg:w-6/12">
                     <tbody class="text-center text-2xl">
@@ -161,7 +158,7 @@
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 mx-auto items-center space-x-4 px-4 md:px-32">
         <div class="md:col-span-2 lg:col-span-3">
-            <p class="text-xl">
+            <p class="text-xl text-justify">
                 Welcome to the International Conference on “Climate Change Cultural Heritage & Sustainable Habitat” – Uniting for a Sustainable Future!
                 In a world facing unprecedented environmental challenges, we are proud to invite you to a gathering of brilliant minds and passionate individuals dedicated to addressing one of the most critical issues of our time: climate change, to understand its impact on Cultural Heritage and Habitat.
                 Our conference aims to foster a global dialogue, bringing together climate scientists, urban planners, conservation architects, academicians, activists, researchers and policy makers from every corner of the globe. Together, we will explore innovative solutions, share groundbreaking research, and catalyze collective action to combat the urgent threats posed by climate change on cultural heritage and habitat.
