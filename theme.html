@@ -1,13 +1,13 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
 </head>
-<body class="bg-gradient-to-b from-blue-950 to-blue-300 h-screen">
+<body>
     <header class="bg-white">
         <nav class="flex justify-between items-center w-[99%] mx-auto  ">
             <div>
@@ -25,8 +25,8 @@
                         <div id="dropdownNavbarAbout" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                             <ul class="py-1" aria-labelledby="dropdownNavbarLinkAbout">
                                 <li>
-                                    <a href="./theme.html" target class="text-sm hover:bg-gray-100 sm:hover:text-rose-800 text-gray-700 block px-4 py-2">Theme</a>
-                                </li> <!-- LINK FOR THEMES- "https://rb.gy/8fys2i" -->
+                                    <a href="#" target class="text-sm hover:bg-gray-100 sm:hover:text-rose-800 text-gray-700 block px-4 py-2">Theme</a>
+                                </li>
                                 <li>
                                     <a href="./about.html" class="text-sm hover:bg-gray-100 sm:hover:text-rose-800 text-gray-700 block px-4 py-2">About Conference</a>
                                 </li>
@@ -107,26 +107,81 @@
         </nav>
     </header>
 
-<!--  navbar ends  -->
-    <div class="bg-blue-300 mb-[32%]">
-        <h1 class="text-center text-2xl text-black">This Page is under Construction</h1>
+    <!-- Title of Page -->
+    <div class="px-20 py-5 blinking-text" style="background: repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(0, 0, 0, 0.1) 5px, rgba(0, 0, 0, 0.1) 10px); background-size: 10px 100%; height: auto; background-repeat: repeat;">
+        <h1 class="text-6xl text-black font-bold items-center justify-center text-center">THEMES</h1>
+    </div>
+    <!-- SECTION -->
+    <div class="flex items-center justify-center space-x-4 py-4 md:py-8 flex-wrap">
+        <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="./image/heritage.png" alt="" />
+            </a>
+            <div class="pb-2">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Themes on Cultural Heritage</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="https://docs.google.com/document/d/1k7XwfcmzC2OfmoQ01AfLmo9tj1L9QHj-/edit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Download
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+            <a href="#">
+                <img class="rounded-t-lg" src="/image/habitat (1).png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Themes and Sub-Themes on Sustainable Habitat</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="https://docs.google.com/spreadsheets/d/11VU6p3qzUb6latRZqXwCR3VH6kgSUlb_/edit#gid=1343076164" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Download
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="/image/climate-change (1).png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Themes on Climate Change</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1HVr0Exmf0B2TAQiMGD3fPkFhCKJJ9Tn_/edit#gid=2013239592" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Download
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
     </div>
 
-<!--Footer-->
+
+    <!-- FOOTER  -->
     <footer class="bg-white dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
             <div class="flex flex-col space-y-2 sm:gap-6 sm:grid-cols-3">
                 <div class="mb-6 md:mb-0">
                     <a href="./index.html" class="flex items-center">
-                        <img src="./image/ccchsh.png" class="h-8 mr-3 bg-white rounded-2xl" alt="FlowBite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">3chsh-2024</span>
+                        <img src="./image/ccchsh.png" class="h-8 mr-3 bg-white rounded-2xl" alt="ccchsh Logo" /><span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">3chsh-2024</span>
                     </a>
                 </div>
                 <div class="mb-6 md:mb-0">
-                    <a target="_blank" href="https://www.google.com/maps/place/Bapu+Sabhagar,+At+Gyan+Bhawan+Patna/@25.6203967,85.1441127,15z/data=!4m6!3m5!1s0x39ed58572f52045f:0xa38969b037c77c0e!8m2!3d25.6203967!4d85.1441127!16s%2Fg%2F11gdkwylh2?entry=ttu" class="flex items-center">
+                    <!-- <a target="_blank" href=https://www.google.com/maps/place/Bapu+Sabhagar,+At+Gyan+Bhawan+Patna/@25.6203967,85.1441127,15z/data=!4m6!3m5!1s0x39ed58572f52045f:0xa38969b037c77c0e!8m2!3d25.6203967!4d85.1441127!16s%2Fg%2F11gdkwylh2?entry=ttu class="flex items-center">
                         <img src="./image/google-maps.png" class="h-8 mr-3" alt="FlowBite Logo" /><p class="text-white">Bapu Sabhagar   Gyan Bhawan , Patna</p>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="mb-6 md:mb-0">
                     <h1 class="text-lg font bold text-white">Contact Us :-<span href="ccchsh.conf@nitp.ac.in" class="text-blue-700 px-4"><a href="mailto:ccchsh.conf@nitp.ac.in" class="underline">ccchsh.conf@nitp.ac.in</a></span>
@@ -172,7 +227,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">CCCHSH™</a>. All Rights Reserved.
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">3chsh™</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <p class="text-gray-600 font-bold">Designed & Maintained by - Akash Saurav & Deepak Kumar</p>
@@ -181,9 +236,8 @@
         </div>
     </footer>
 
-    
-    
-    
+
+    <!-- SCRIPT -->
     <!-- script for small-sized menu -->
     <script>
         const navLinks = document.querySelector('.nav-links')
@@ -195,6 +249,6 @@
 
     <!-- script for dropdown of 'Call for Papers' -->
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-  
+    
 </body>
 </html>
